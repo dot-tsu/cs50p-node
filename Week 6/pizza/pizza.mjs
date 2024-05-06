@@ -33,7 +33,7 @@ const validateArguments = (args) => {
 const filename = validateArguments(process.argv);
 
 if (!fs.existsSync(filename)) {
-  console.error(`El archivo ${filename} no existe.`);
+  console.error(`The file ${filename} doesn't exist.`);
   process.exit(5);
 }
 
