@@ -10,7 +10,7 @@ const main = async () => {
 const count = (text) => {
   const regex = /\bum\b/gi;
   let matches = text.match(regex) ?? [];
-  return matches.length ?? 0;
+  return matches.length;
 };
 
 main();
