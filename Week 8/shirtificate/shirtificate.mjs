@@ -39,8 +39,8 @@ const generateShirtificate = async (name) => {
   // Name
   pdfDoc.fillColor("white");
   pdfDoc
-    .fontSize(12)
-    .text(name, imageX, imageY + scaledImageHeight - 100, { align: "center" });
+    .fontSize(8)
+    .text(name + " took CS50", imageX, imageY + scaledImageHeight - 100, { align: "center" });
 
   pdfDoc.end();
 };
